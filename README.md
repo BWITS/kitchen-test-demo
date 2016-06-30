@@ -4,7 +4,7 @@ http://kitchen.ci
 
 ### quick start
 
-After you installed kitcher, you can run test directly:
+After you installed kitchen, you can run test directly:
 
     cd kitchen-<...>
     kitcher test
