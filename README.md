@@ -6,7 +6,15 @@ http://kitchen.ci
 
 After you installed kitcher, you can run test directly:
 
+    cd kitchen-<...>
     kitcher test
+
+### Kitchen Test with kitchen-vagrant
+
+````
+driver: kitchen-vagrant
+provisioner: chef_solo
+````
 
 ### Kitchen Test with kitchen-docker
 
@@ -14,6 +22,13 @@ After you installed kitcher, you can run test directly:
 driver: kitchen-docker
 provisioner: chef_solo
 ````
+
+### Kitchen Test with ansible-playbook
+```
+driver: kitchen-docker
+provisioner: ansible-playbook
+```
+
 ### Notes for running docker on mac
 
 You have to add `use_sudo: false` as below in `.kitchen.yml`
