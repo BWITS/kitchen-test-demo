@@ -2,12 +2,16 @@
 driver:
   name: docker
   use_sudo: false
+
 provisioner:
   name: chef_solo
 
 platforms:
   - name: ubuntu-14.04
   - name: centos-7.2
+    driver_config:
+      image: chef/centos-7
+      platform: centos
 
 suites:
   - name: default
