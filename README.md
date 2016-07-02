@@ -6,10 +6,11 @@ http://kitchen.ci
 
 After you installed kitchen, you can run test directly:
 
-    cd kitchen-<...>
+    find . -name ".kitchen.yml"
+    # run kitchen command under the same folder of .kitchen.yml 
     kitchen test
 
-### kitchen test = kitchen create + kitchen converge + kitchen verify + kitchen destroy
+kitchen test = kitchen create + kitchen converge + kitchen verify + kitchen destroy
 
 ### Demo
 
