@@ -13,13 +13,11 @@ After you installed kitchen, you can run test directly:
 
 ### Demo
 
-Kitchen Test with driver vagrant
-Kitchen Test with driver docker
-
-Kitchen Test with provisioner chef-solo
-Kitchen Test with provisioner ansible-playbook
-
-Kitchen Test with verifier Serverspec 
+* Kitchen Test with driver vagrant
+* Kitchen Test with driver docker
+* Kitchen Test with provisioner chef-solo
+* Kitchen Test with provisioner ansible-playbook
+* Kitchen Test with verifier Serverspec 
 
 ### serverspec resource
 
