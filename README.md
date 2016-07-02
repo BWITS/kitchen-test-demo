@@ -7,27 +7,23 @@ http://kitchen.ci
 After you installed kitchen, you can run test directly:
 
     cd kitchen-<...>
-    kitcher test
+    kitchen test
 
-### Kitchen Test with kitchen-vagrant
+### kitchen test = kitchen create + kitchen converge + kitchen verify + kitchen destroy
 
-````
-driver: kitchen-vagrant
-provisioner: chef_solo
-````
+### Demo
 
-### Kitchen Test with kitchen-docker
+Kitchen Test with driver vagrant
+Kitchen Test with driver docker
 
-````
-driver: kitchen-docker
-provisioner: chef_solo
-````
+Kitchen Test with provisioner chef-solo
+Kitchen Test with provisioner ansible-playbook
 
-### Kitchen Test with ansible-playbook
-```
-driver: kitchen-docker
-provisioner: ansible-playbook
-```
+Kitchen Test with verifier Serverspec 
+
+### serverspec resource
+
+http://serverspec.org/resource_types.html
 
 ### Notes for running docker on mac
 
