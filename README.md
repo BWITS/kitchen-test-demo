@@ -34,3 +34,7 @@ driver:
 provisioner:
   name: chef_solo
 ```
+
+### Connecting To a Test Kitchen Instance Via SFTP, SSH, or SCP
+
+http://www.ryanchapin.com/fv-b-4-787/Connecting-To-a-Test-Kitchen-Instance-Via-SFTP--SSH--or-SCP.html
