@@ -39,3 +39,28 @@ provisioner:
 ### Connecting To a Test Kitchen Instance Via SFTP, SSH, or SCP
 
 http://www.ryanchapin.com/fv-b-4-787/Connecting-To-a-Test-Kitchen-Instance-Via-SFTP--SSH--or-SCP.html
+
+### work behind corporate proxy
+
+```
+provisioner:
+  name: ansible_playbook
+  hosts: test-kitchen
+  ansible_verbose: true
+  ansible_verbosity: 3
+  require_chef_for_busser: false
+  http_proxy: http://10.0.0.1:3128
+  https_proxy: http://10.0.0.1:3128
+  no_proxy: localhost,127.0.0.1
+
+verifier:
+  name: serverspec
+  http_proxy: http://10.0.0.1:3128
+  https_proxy: http://10.0.0.1:3128
+  no_proxy: localhost,127.0.0.1
+  
+```
+
+refer: 
+
+https://github.com/test-kitchen/kitchen-vagrant/issues/235
