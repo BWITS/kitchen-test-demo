@@ -60,7 +60,3 @@ verifier:
   no_proxy: localhost,127.0.0.1
   
 ```
-
-refer: 
-
-https://github.com/test-kitchen/kitchen-vagrant/issues/235
