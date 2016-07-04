@@ -33,7 +33,7 @@ driver:
   name: docker
   use_sudo: false
 provisioner:
-  name: chef_solo
+  name: ansible_playbook
 ```
 
 ### Connecting To a Test Kitchen Instance Via SFTP, SSH, or SCP
