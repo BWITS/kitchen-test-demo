@@ -52,6 +52,17 @@ provisioner:
   http_proxy: http://10.0.0.1:3128
   https_proxy: http://10.0.0.1:3128
   no_proxy: localhost,127.0.0.1
+  
+platforms:
+  - name: centos-7.2
+    driver_config:
+      provision_command:
+        - yum -y install iproute
+        - yum -y install net-tools
+      image: ansible/centos7-ansible:stable
+      platform: centos
+      http_proxy: http://10.0.0.1:3128
+      https_proxy: http://10.0.0.1:3128
 
 verifier:
   name: serverspec
